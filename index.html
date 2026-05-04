@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Human Anatomy Explorer</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/GLTFLoader.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">ANATOMICA <span>/ 3D EXPLORER</span></div>
+      <div class="header-info">
+        11 systems &nbsp;·&nbsp; Three.js · interactive
+      </div>
+    </header>
+
+    <div class="main">
+      <nav class="sidebar" id="sidebar"></nav>
+
+      <div class="canvas-area">
+        <div class="grid-bg"></div>
+        <div class="scan-line"></div>
+
+        <div class="active-system-label">
+          <div class="sys-name" id="label-text" style="color: var(--accent)">
+            DRAG TO ROTATE · SELECT A SYSTEM
+          </div>
+        </div>
+
+        <canvas id="three-canvas"></canvas>
+
+        <!-- Sketchfab overlay for systems with an embed -->
+        <div id="sketchfab-overlay">
+          <div class="sketchfab-bar">
+            <span id="sf-label"></span>
+            <div
+              id="sf-gender-toggle"
+              style="display: none; gap: 4px; display: none"
+            >
+              <button
+                id="sf-btn-female"
+                onclick="sfSwitchGender('female')"
+                style="
+                  padding: 4px 12px;
+                  border-radius: 100px;
+                  border: 1px solid #ec4899;
+                  background: none;
+                  color: #ec4899;
+                  font-family: &quot;Space Mono&quot;, monospace;
+                  font-size: 10px;
+                  cursor: pointer;
+                  transition: all 0.15s;
+                "
+              >
+                Female
+              </button>
+              <button
+                id="sf-btn-male"
+                onclick="sfSwitchGender('male')"
+                style="
+                  padding: 4px 12px;
+                  border-radius: 100px;
+                  border: 1px solid #ec4899;
+                  background: none;
+                  color: #ec4899;
+                  font-family: &quot;Space Mono&quot;, monospace;
+                  font-size: 10px;
+                  cursor: pointer;
+                  transition: all 0.15s;
+                "
+              >
+                Male
+              </button>
+            </div>
+            <span>Sketchfab 3D Model</span>
+          </div>
+          <iframe
+            id="sf-iframe"
+            allow="autoplay; fullscreen; xr-spatial-tracking"
+            allowfullscreen
+          ></iframe>
+        </div>
+
+        <div class="orbit-hint">
+          🖱 DRAG TO ROTATE &nbsp;·&nbsp; SCROLL TO ZOOM
+        </div>
+
+        <div class="view-controls">
+          <button
+            class="view-btn active"
+            id="vbtn-anterior"
+            onclick="setView('anterior')"
+          >
+            Anterior
+          </button>
+          <button
+            class="view-btn"
+            id="vbtn-posterior"
+            onclick="setView('posterior')"
+          >
+            Posterior
+          </button>
+          <button
+            class="view-btn"
+            id="vbtn-lateral"
+            onclick="setView('lateral')"
+          >
+            Lateral
+          </button>
+        </div>
+      </div>
+
+      <div class="info-panel" id="info-panel">
+        <div class="empty-state" id="empty-state">
+          <div class="empty-icon">🫀</div>
+          <div class="empty-title">Select a body system</div>
+          <div class="empty-sub">
+            Click any system on the left or tap a hotspot on the 3D body to
+            explore anatomy
+          </div>
+        </div>
+        <div
+          id="system-info"
+          style="display: none; flex-direction: column; height: 100%"
+        ></div>
+      </div>
+    </div>
+
+    <div class="tooltip-3d" id="tooltip3d">
+      <div class="tooltip-3d-name" id="tt-name"></div>
+      <div class="tooltip-3d-sys" id="tt-sys"></div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
