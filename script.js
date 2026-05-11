@@ -71,7 +71,7 @@
           icon: "🦴",
           tagline: "The structural framework of the body",
           sketchfabEmbed:
-            "https://sketchfab.com/models/60ff9fe1a46d4456ad99ccd158210685/embed?autostart=1&ui_theme=dark",
+            `<div class="sketchfab-embed-wrapper"> <iframe title="Skeleton - Names of Human Skeleton" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share src="https://sketchfab.com/models/0c66fa3be6584d72a455accab123f1bd/embed"> </iframe> <p style="font-size: 13px; font-weight: normal; margin: 5px; color: #4A4A4A;"> <a href="https://sketchfab.com/3d-models/skeleton-names-of-human-skeleton-0c66fa3be6584d72a455accab123f1bd?utm_medium=embed&utm_campaign=share-popup&utm_content=0c66fa3be6584d72a455accab123f1bd" target="_blank" rel="nofollow" style="font-weight: bold; color: #1CAAD9;"> Skeleton - Names of Human Skeleton </a> by <a href="https://sketchfab.com/srikanthsamba?utm_medium=embed&utm_campaign=share-popup&utm_content=0c66fa3be6584d72a455accab123f1bd" target="_blank" rel="nofollow" style="font-weight: bold; color: #1CAAD9;"> srikanthsamba </a> on <a href="https://sketchfab.com?utm_medium=embed&utm_campaign=share-popup&utm_content=0c66fa3be6584d72a455accab123f1bd" target="_blank" rel="nofollow" style="font-weight: bold; color: #1CAAD9;">Sketchfab</a></p></div>`,
           description:
             "The skeletal system forms the rigid framework that supports and protects the body's organs, enables movement, produces blood cells, and stores minerals.",
           organs: [
@@ -1409,6 +1409,9 @@
           activeSystem = null;
           sfOverlay.classList.remove("show");
           sfIframe.src = "";
+          sfIframe.style.display = "";
+          const oldEmbed = sfOverlay.querySelector(".sf-html-embed");
+          if (oldEmbed) oldEmbed.remove();
           document.getElementById("empty-state").style.display = "flex";
           document.getElementById("system-info").style.display = "none";
           document.getElementById("label-text").textContent =
@@ -1426,12 +1429,31 @@
         // Show Sketchfab embed if system has one
         if (sys.sketchfabEmbed) {
           const embed = sys.sketchfabEmbed;
-          const isGendered = typeof embed === "object";
+          const isGendered = typeof embed === "object" && !Array.isArray(embed);
+          const isHTML = typeof embed === "string" && embed.trim().startsWith("<");
           const genderToggle = document.getElementById("sf-gender-toggle");
           genderToggle.style.display = isGendered ? "flex" : "none";
           if (isGendered) {
             sfSwitchGender(activeGender, embed);
+          } else if (isHTML) {
+            const sfOverlayInner = document.getElementById("sketchfab-overlay");
+            // Remove old html-embed if any
+            const old = sfOverlayInner.querySelector(".sf-html-embed");
+            if (old) old.remove();
+            const wrapper = document.createElement("div");
+            wrapper.className = "sf-html-embed";
+            wrapper.style.cssText = "flex:1;display:flex;flex-direction:column;overflow:hidden";
+            wrapper.innerHTML = embed;
+            const iframeInEmbed = wrapper.querySelector("iframe");
+            if (iframeInEmbed) {
+              iframeInEmbed.style.cssText = "width:100%;flex:1;border:none;min-height:0";
+            }
+            sfIframe.style.display = "none";
+            sfOverlayInner.appendChild(wrapper);
           } else {
+            const old = document.querySelector(".sf-html-embed");
+            if (old) old.remove();
+            sfIframe.style.display = "";
             sfIframe.src = embed;
           }
           document.getElementById("sf-label").textContent =
