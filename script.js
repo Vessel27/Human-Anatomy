@@ -1433,7 +1433,7 @@
           } else {
             sfIframe.src = embed;
           }
-          document.getElementById("sf-label").textContent =
+          document.getElementById("sf-label").innerHTML =
             sys.icon + " " + sys.name.toUpperCase() + " SYSTEM";
           sfOverlay.classList.add("show");
         } else {
