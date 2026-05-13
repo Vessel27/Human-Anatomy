@@ -329,9 +329,10 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 14px;
+  font-size: 13px;
   flex-shrink: 0;
   background: var(--sys-glow, rgba(79, 158, 255, 0.1));
+  color: var(--sys-c, var(--accent));
 }
 .organ-name { font-weight: 500; }
 .organ-fn {
