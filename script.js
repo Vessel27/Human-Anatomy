@@ -337,7 +337,7 @@
           icon: "<i class='fa-solid fa-kidneys'></i>",
           tagline: "Blood filtration, fluid & electrolyte balance",
           sketchfabEmbed:
-            "https://sketchfab.com/models/4c9f8c0b084e4b8192936495563f92a7/embed?autostart=1&ui_theme=dark",
+            "https://sketchfab.com/models/fbdc1d3b14454cacbf353ba21246b7b2/embed?autostart=1&ui_theme=dark",
           description:
             "The urinary system filters ~180 L of blood per day, excretes metabolic waste in urine, precisely regulates blood volume, electrolyte concentrations, and pH, and produces hormones including erythropoietin and renin.",
           organs: [
