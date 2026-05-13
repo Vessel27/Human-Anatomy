@@ -1,4 +1,4 @@
-﻿      // ─────────────────────────────────────────────
+      // ─────────────────────────────────────────────
       // STATE (declared first so all code can access)
       // ─────────────────────────────────────────────
       let activeSystem = null;
@@ -12,7 +12,7 @@
         integumentary: {
           name: "Integumentary",
           color: "#f59e0b",
-          icon: "🧴",
+          icon: "<i class='fa-solid fa-shield-halved'></i>",
           tagline: "The body's protective outer barrier",
           sketchfabEmbed:
             "https://sketchfab.com/models/927ec094c29644ef8bff1538b4744579/embed?autostart=1&ui_theme=dark",
@@ -21,37 +21,37 @@
           organs: [
             {
               name: "Epidermis",
-              icon: "🟫",
+              icon: "<i class='fa-solid fa-layer-group'></i>",
               fn: "Outermost waterproof barrier",
               desc: "A stratified squamous epithelium 0.05–1.5 mm thick depending on body region. Its deepest layer (stratum basale) continuously divides, pushing cells upward where they flatten, fill with keratin, and eventually shed. Melanocytes here produce melanin that absorbs UV radiation and determines skin tone.",
             },
             {
               name: "Dermis",
-              icon: "🔶",
+              icon: "<i class='fa-solid fa-bars-staggered'></i>",
               fn: "Structural support layer",
               desc: "The thick layer beneath the epidermis made of dense irregular connective tissue. It houses collagen and elastin fibers that give skin its tensile strength and elasticity. The dermis also contains blood vessels, nerve endings, hair follicle roots, and gland ducts.",
             },
             {
               name: "Hair Follicles",
-              icon: "〰️",
+              icon: "<i class='fa-solid fa-wave-square'></i>",
               fn: "Hair shaft production",
               desc: "Pocket-like structures that extend from the dermis into the hypodermis. The follicle matrix cells divide rapidly to build the hair shaft from keratin. Each follicle cycles through active growth (anagen, 2–7 years), regression (catagen, 2–3 weeks), and rest (telogen, 3 months) before shedding.",
             },
             {
               name: "Eccrine Sweat Glands",
-              icon: "💧",
+              icon: "<i class='fa-solid fa-droplet'></i>",
               fn: "Core body temperature control",
               desc: "Simple coiled tubular glands distributed across nearly the entire body surface — densest on palms, soles, and forehead. They secrete a dilute salt-water solution directly onto the skin surface. Evaporation of this sweat is the primary mechanism for dissipating excess body heat during exercise or fever.",
             },
             {
               name: "Sebaceous Glands",
-              icon: "🫧",
+              icon: "<i class='fa-solid fa-oil-can'></i>",
               fn: "Sebum secretion & skin conditioning",
               desc: "Holocrine glands attached to hair follicles that release sebum — a lipid-rich mixture of triglycerides, wax esters, and squalene. Sebum waterproofs the hair shaft, slows water loss from the skin surface, and has mild antimicrobial properties. Overproduction combined with follicle blockage is the primary cause of acne.",
             },
             {
               name: "Nails",
-              icon: "🔲",
+              icon: "<i class='fa-solid fa-hand'></i>",
               fn: "Fingertip protection & precision grip",
               desc: "Hard translucent plates of tightly packed keratin produced by the nail matrix beneath the proximal nail fold. They protect the sensitive distal phalanx from trauma and act as a rigid counter-pressure surface that dramatically improves the ability to pick up small objects. Fingernails grow approximately 3 mm per month.",
             },
@@ -68,7 +68,7 @@
         skeletal: {
           name: "Skeletal",
           color: "#94a3b8",
-          icon: "🦴",
+          icon: "<i class='fa-solid fa-bone'></i>",
           tagline: "The structural framework of the body",
           sketchfabEmbed:
             "https://sketchfab.com/models/0c66fa3be6584d72a455accab123f1bd/embed?autostart=1&ui_theme=dark",
@@ -77,37 +77,37 @@
           organs: [
             {
               name: "Skull",
-              icon: "💀",
+              icon: "<i class='fa-solid fa-skull'></i>",
               fn: "Cranial & facial bone complex",
               desc: "The skull is composed of 22 bones fused at immovable fibrous joints called sutures. The 8 cranial bones form a rigid vault (neurocranium) that encloses and protects the brain. The 14 facial bones form the orbits, nasal cavity, and jaw. The mandible is the only movable skull bone, articulating at the temporomandibular joint.",
             },
             {
               name: "Vertebral Column",
-              icon: "🧱",
+              icon: "<i class='fa-solid fa-align-center'></i>",
               fn: "Axial support & spinal cord housing",
               desc: "The spine consists of 33 vertebrae stacked in 5 regions: 7 cervical (neck), 12 thoracic (mid-back), 5 lumbar (lower back), 5 sacral (fused into the sacrum), and 4 coccygeal (fused into the coccyx). Intervertebral fibrocartilage discs between each mobile vertebra act as shock absorbers and allow the spine's range of motion.",
             },
             {
               name: "Thoracic Cage",
-              icon: "🫷",
+              icon: "<i class='fa-solid fa-grip-lines'></i>",
               fn: "Heart & lung protection",
               desc: "Formed by 12 pairs of ribs, 12 thoracic vertebrae, and the sternum. Ribs 1–7 (true ribs) attach directly to the sternum via costal cartilage. Ribs 8–10 (false ribs) attach indirectly via shared cartilage. Ribs 11–12 (floating ribs) have no anterior attachment. The cage also acts as a bellows during breathing, expanding and contracting with each breath.",
             },
             {
               name: "Pelvis",
-              icon: "🦴",
+              icon: "<i class='fa-solid fa-circle-half-stroke'></i>",
               fn: "Weight transfer & pelvic organ support",
               desc: "The bony pelvis is formed by two hip bones (each comprising the ilium, ischium, and pubis fused at the acetabulum), the sacrum, and coccyx. It transfers the entire weight of the upper body to the lower limbs and forms a protective basin for the bladder, rectum, and reproductive organs. The female pelvis is wider and shallower to accommodate childbirth.",
             },
             {
               name: "Long Bones",
-              icon: "📏",
+              icon: "<i class='fa-solid fa-ruler'></i>",
               fn: "Lever arms for locomotion",
               desc: "Long bones such as the femur, tibia, fibula, humerus, radius, and ulna have a hollow diaphysis (shaft) of compact bone surrounding a medullary cavity filled with yellow (fatty) marrow. The expanded epiphyses at each end are covered with articular cartilage. Red marrow in the epiphyses produces blood cells throughout life.",
             },
             {
               name: "Synovial Joints",
-              icon: "🔗",
+              icon: "<i class='fa-solid fa-link'></i>",
               fn: "Freely movable articulations",
               desc: "Synovial joints are the most common and mobile joint type. A fluid-filled joint capsule lined with synovial membrane secretes synovial fluid that lubricates and nourishes the avascular articular cartilage. Subtypes include ball-and-socket (hip, shoulder), hinge (knee, elbow), pivot (radioulnar), and saddle (thumb carpometacarpal) joints.",
             },
@@ -124,7 +124,7 @@
         lymphatic: {
           name: "Lymphatic",
           color: "#10b981",
-          icon: "🟢",
+          icon: "<i class='fa-solid fa-shield-virus'></i>",
           tagline: "Fluid balance, immunity & fat absorption",
           sketchfabEmbed:
             "https://sketchfab.com/models/14800d739ecb46678d7584a401b0aa77/embed?autostart=1&ui_theme=dark",
@@ -133,37 +133,37 @@
           organs: [
             {
               name: "Lymph Nodes",
-              icon: "⬡",
+              icon: "<i class='fa-solid fa-circle-nodes'></i>",
               fn: "Immune surveillance checkpoints",
               desc: "Bean-shaped encapsulated organs ranging 1–25 mm, clustered in the neck, axilla, groin, and abdomen. Afferent vessels bring lymph in; it percolates through B-cell follicles and T-cell zones where antigens are detected and immune responses initiated. Efferent vessels carry filtered lymph toward the thoracic duct.",
             },
             {
               name: "Spleen",
-              icon: "🫘",
+              icon: "<i class='fa-solid fa-filter'></i>",
               fn: "Blood filtration & immune reservoir",
               desc: "The largest lymphoid organ (~150 g), in the left upper quadrant beneath the diaphragm. Its red pulp filters aged or damaged red blood cells and stores platelets. Its white pulp contains lymphocytes that mount immune responses to blood-borne antigens. It also acts as an emergency reservoir of red blood cells released during hemorrhage.",
             },
             {
               name: "Thymus",
-              icon: "🔬",
+              icon: "<i class='fa-solid fa-microscope'></i>",
               fn: "T-lymphocyte maturation site",
               desc: "A bilobed gland in the anterior mediastinum, largest and most active during childhood. Immature T-cells migrate here from bone marrow and undergo selection: those that recognize self-MHC survive (positive selection), while those that attack self-proteins are eliminated (negative selection), establishing immune self-tolerance.",
             },
             {
               name: "Thoracic Duct",
-              icon: "〰️",
+              icon: "<i class='fa-solid fa-route'></i>",
               fn: "Main lymph return vessel",
               desc: "The largest lymphatic vessel (~38–45 cm), originating at the cisterna chyli in the abdomen. It collects lymph from the entire body below the diaphragm and the left upper body, draining into the left subclavian vein. It also carries chylomicrons — fat particles absorbed from the small intestine — into the bloodstream.",
             },
             {
               name: "Tonsils",
-              icon: "🔴",
+              icon: "<i class='fa-solid fa-circle-dot'></i>",
               fn: "Oropharyngeal immune sentinels",
               desc: "Unencapsulated lymphoid tissue forming Waldeyer's ring around the throat entrance: palatine tonsils (sides of throat), pharyngeal tonsil/adenoid (nasopharynx), and lingual tonsil (tongue base). Their crypt-covered surface maximizes contact with inhaled and ingested antigens, triggering local IgA antibody production.",
             },
             {
               name: "Bone Marrow",
-              icon: "🔵",
+              icon: "<i class='fa-solid fa-syringe'></i>",
               fn: "Origin of all immune cells",
               desc: "Red bone marrow in flat bones and epiphyses is the site of hematopoiesis — production of all blood and immune cells from pluripotent stem cells. B-lymphocytes complete maturation here. T-lymphocyte precursors leave marrow and travel to the thymus to mature. Adults have ~2.6 kg of bone marrow, roughly half of which is red.",
             },
@@ -180,7 +180,7 @@
         reproductive: {
           name: "Reproductive",
           color: "#ec4899",
-          icon: "🧬",
+          icon: "<i class='fa-solid fa-dna'></i>",
           tagline: "Biological system for creating life",
           sketchfabEmbed: {
             female:
@@ -193,37 +193,37 @@
           male: [
             {
               name: "Testes",
-              icon: "⚫",
+              icon: "<i class='fa-solid fa-circle'></i>",
               fn: "Sperm & testosterone production",
               desc: "Paired oval glands housed in the scrotum, kept 2–3°C below core body temperature for efficient spermatogenesis. Seminiferous tubules produce ~1,500 sperm per second. Leydig cells between the tubules secrete testosterone in response to LH from the pituitary, driving secondary sexual characteristics and libido.",
             },
             {
               name: "Epididymis",
-              icon: "〰️",
+              icon: "<i class='fa-solid fa-arrows-spin'></i>",
               fn: "Sperm maturation & storage",
               desc: "A tightly coiled 6-metre tube folded against the posterior surface of each testis. Sperm spend 2–3 weeks here acquiring forward motility and the ability to penetrate an egg. The tail of the epididymis stores mature sperm until ejaculation.",
             },
             {
               name: "Vas Deferens",
-              icon: "➡️",
+              icon: "<i class='fa-solid fa-arrow-right'></i>",
               fn: "Sperm transport duct",
               desc: "A thick-walled muscular tube (~45 cm) that propels sperm from the epididymis to the ejaculatory duct via powerful peristaltic contractions during ejaculation. It passes through the inguinal canal and loops over the ureter before joining the seminal vesicle duct.",
             },
             {
               name: "Prostate Gland",
-              icon: "🔵",
+              icon: "<i class='fa-solid fa-circle-half-stroke'></i>",
               fn: "Alkaline seminal fluid secretion",
               desc: "A walnut-sized gland (~20 g) encircling the urethra just below the bladder. It secretes a slightly acidic, zinc-rich fluid that makes up ~30% of semen volume. Prostatic secretions activate sperm motility and help neutralize the acidic vaginal environment. The prostate is the most common site of cancer in men over 50.",
             },
             {
               name: "Seminal Vesicles",
-              icon: "🟡",
+              icon: "<i class='fa-solid fa-vials'></i>",
               fn: "Fructose-rich fluid provider",
               desc: "Paired glands posterior to the bladder that contribute ~60–70% of semen volume. Their secretion is rich in fructose (energy for sperm), prostaglandins (which stimulate uterine contractions to aid sperm transport), and coagulation proteins that temporarily gel semen after ejaculation.",
             },
             {
               name: "Bulbourethral Glands",
-              icon: "🟤",
+              icon: "<i class='fa-solid fa-droplet-slash'></i>",
               fn: "Pre-ejaculatory lubrication",
               desc: "Two pea-sized glands (Cowper's glands) at the base of the penis that secrete a clear alkaline mucus before ejaculation. This pre-ejaculate neutralizes residual urine acidity in the urethra and provides lubrication, creating a safer environment for sperm passage.",
             },
@@ -231,37 +231,37 @@
           female: [
             {
               name: "Ovaries",
-              icon: "⚪",
+              icon: "<i class='fa-solid fa-egg'></i>",
               fn: "Oocyte & hormone production",
               desc: "Paired almond-shaped gonads (~3 cm) that produce oocytes and secrete estrogen and progesterone. A female is born with ~1–2 million primordial follicles; by puberty ~400,000 remain. Only ~400 will ovulate over a lifetime. Estrogen drives the follicular phase; progesterone dominates the luteal phase after ovulation.",
             },
             {
               name: "Fallopian Tubes",
-              icon: "〰️",
+              icon: "<i class='fa-solid fa-wave-square'></i>",
               fn: "Oocyte transport & fertilization site",
               desc: "Two muscular tubes (~10 cm) connecting the ovaries to the uterus. Fertilization almost always occurs in the ampulla, the widest segment. Ciliated epithelium and peristaltic contractions move the oocyte or early embryo toward the uterus over 3–5 days. Blockage of these tubes is a leading cause of female infertility.",
             },
             {
               name: "Uterus",
-              icon: "🔺",
+              icon: "<i class='fa-solid fa-house-medical'></i>",
               fn: "Implantation & fetal development",
               desc: "A hollow, thick-walled muscular organ (~7.5 cm in nulliparous women) with three layers: perimetrium (outer serosa), myometrium (smooth muscle that contracts during labor), and endometrium (inner lining that thickens under estrogen and sheds during menstruation if implantation does not occur).",
             },
             {
               name: "Cervix",
-              icon: "⭕",
+              icon: "<i class='fa-solid fa-ring'></i>",
               fn: "Uterine gateway & mucus barrier",
               desc: "The cylindrical lower segment of the uterus (~3–4 cm) that projects into the vagina. Cervical mucus changes consistency across the cycle: thick and hostile to sperm after ovulation, thin and sperm-permeable at mid-cycle. During labor it effaces and dilates to 10 cm to allow delivery.",
             },
             {
               name: "Vagina",
-              icon: "🔶",
+              icon: "<i class='fa-solid fa-circle-notch'></i>",
               fn: "Birth canal & seminal receptacle",
               desc: "A fibromuscular tube (~8–10 cm) extending from the cervix to the vulva. Its rugae (folds) allow expansion during intercourse and childbirth. Lactobacillus bacteria maintain a pH of 3.8–4.5, inhibiting pathogen growth. It serves as the birth canal, the exit for menstrual flow, and receives sperm during intercourse.",
             },
             {
               name: "Mammary Glands",
-              icon: "🔵",
+              icon: "<i class='fa-solid fa-droplet'></i>",
               fn: "Milk synthesis & secretion",
               desc: "Modified apocrine sweat glands organized into 15–20 lobes of secretory alveoli. During pregnancy, rising prolactin and placental hormones develop the glandular tissue. After delivery, prolactin drives milk production and oxytocin triggers milk ejection (let-down reflex). Colostrum secreted in the first days is rich in IgA antibodies.",
             },
@@ -278,7 +278,7 @@
         muscular: {
           name: "Muscular",
           color: "#ef4444",
-          icon: "💪",
+          icon: "<i class='fa-solid fa-dumbbell'></i>",
           tagline: "The engine of movement, posture & heat",
           sketchfabEmbed:
             "https://sketchfab.com/models/7ea21567ff9942bf9511e2d99efe85d9/embed?autostart=1&ui_theme=dark",
@@ -287,37 +287,37 @@
           organs: [
             {
               name: "Skeletal Muscle",
-              icon: "💪",
+              icon: "<i class='fa-solid fa-dumbbell'></i>",
               fn: "Voluntary movement & posture",
               desc: "Striated, multinucleated fibers attached to bone via tendons. Contraction is triggered by motor neurons releasing acetylcholine at the neuromuscular junction, causing actin-myosin cross-bridge cycling. Fiber types range from slow-twitch (fatigue-resistant, oxidative) to fast-twitch (powerful, glycolytic). Makes up ~40% of body mass in men.",
             },
             {
               name: "Cardiac Muscle",
-              icon: "❤️",
+              icon: "<i class='fa-solid fa-heart-pulse'></i>",
               fn: "Involuntary, continuous heart pumping",
               desc: "Striated but involuntary, found exclusively in the myocardium. Cardiomyocytes are branched and connected by intercalated discs containing gap junctions that spread electrical impulses instantly across the heart wall, ensuring coordinated contraction. Highly fatigue-resistant due to dense mitochondria and constant aerobic metabolism.",
             },
             {
               name: "Smooth Muscle",
-              icon: "〰️",
+              icon: "<i class='fa-solid fa-wave-square'></i>",
               fn: "Involuntary organ & vessel movement",
               desc: "Non-striated, spindle-shaped cells controlled by the autonomic nervous system and local hormones. Found in blood vessels, airways, GI tract, bladder, and uterus. Responsible for peristalsis, vasoconstriction, bronchodilation, and bladder emptying. Contracts slowly but sustains contraction for long periods.",
             },
             {
               name: "Tendons",
-              icon: "🔗",
+              icon: "<i class='fa-solid fa-link'></i>",
               fn: "Force transmission to bone",
               desc: "Dense regular connective tissue composed almost entirely of parallel collagen type I fibers. They transmit tensile force of muscle contraction to the skeleton with minimal energy loss. The Achilles tendon, the body's largest, can withstand loads over 10 times body weight during running.",
             },
             {
               name: "Diaphragm",
-              icon: "🌀",
+              icon: "<i class='fa-solid fa-lungs'></i>",
               fn: "Primary muscle of breathing",
               desc: "A dome-shaped sheet of skeletal muscle separating the thoracic and abdominal cavities. During inspiration it contracts and flattens, increasing thoracic volume and drawing air into the lungs. Innervated by the phrenic nerve (C3–5). Paralysis of the diaphragm requires mechanical ventilation.",
             },
             {
               name: "Gluteus Maximus",
-              icon: "🏃",
+              icon: "<i class='fa-solid fa-person-running'></i>",
               fn: "Largest muscle, hip extension",
               desc: "The largest muscle in the body by volume, forming the bulk of the buttock. Primary extensor and external rotator of the hip, critical for climbing stairs, rising from a chair, and running. Relatively inactive during level walking but powerfully recruited during uphill locomotion and explosive movements.",
             },
@@ -334,7 +334,7 @@
         urinary: {
           name: "Urinary",
           color: "#f97316",
-          icon: "🫘",
+          icon: "<i class='fa-solid fa-kidneys'></i>",
           tagline: "Blood filtration, fluid & electrolyte balance",
           sketchfabEmbed:
             "https://sketchfab.com/models/4c9f8c0b084e4b8192936495563f92a7/embed?autostart=1&ui_theme=dark",
@@ -343,37 +343,37 @@
           organs: [
             {
               name: "Kidneys",
-              icon: "🫘",
+              icon: "<i class='fa-solid fa-kidneys'></i>",
               fn: "Blood filtration & homeostasis",
               desc: "Two retroperitoneal organs (~150 g each) with a cortex and medulla. Each contains ~1 million nephrons that collectively filter ~180 L of plasma per day, reabsorbing 99% and excreting 1–2 L as urine. They also regulate blood pressure via the renin-angiotensin-aldosterone system and stimulate red blood cell production via erythropoietin.",
             },
             {
               name: "Nephrons",
-              icon: "🔬",
+              icon: "<i class='fa-solid fa-microscope'></i>",
               fn: "Microscopic filtration units",
               desc: "The functional unit of the kidney. Each nephron consists of a glomerulus (high-pressure filtration capillary), Bowman's capsule, proximal convoluted tubule (bulk reabsorption), loop of Henle (concentration gradient), distal convoluted tubule (fine-tuning), and collecting duct (final water reabsorption under ADH control).",
             },
             {
               name: "Ureters",
-              icon: "➡️",
+              icon: "<i class='fa-solid fa-arrow-down-long'></i>",
               fn: "Urine transport to bladder",
               desc: "Two muscular tubes (~25–30 cm) lined with transitional epithelium. Peristaltic contractions every 10–15 seconds propel urine from the renal pelvis to the bladder. They enter the bladder at an oblique angle, creating a valve effect that prevents urine reflux when bladder pressure rises.",
             },
             {
               name: "Urinary Bladder",
-              icon: "🔵",
+              icon: "<i class='fa-solid fa-circle'></i>",
               fn: "Urine storage reservoir",
               desc: "A hollow muscular organ with a wall of smooth muscle (detrusor) that can stretch to hold 400–600 mL. Stretch receptors signal the urge to void at ~150–200 mL. Micturition requires coordinated relaxation of the internal urethral sphincter (involuntary) and external urethral sphincter (voluntary).",
             },
             {
               name: "Urethra",
-              icon: "〰️",
+              icon: "<i class='fa-solid fa-minus'></i>",
               fn: "Urine expulsion channel",
               desc: "The terminal tube for urine excretion. In females it is ~4 cm, opening anterior to the vagina. In males it is ~20 cm, passing through the prostate and penis, and also serves as the ejaculatory channel. The external urethral sphincter provides voluntary control of urination.",
             },
             {
               name: "Adrenal Glands",
-              icon: "🔺",
+              icon: "<i class='fa-solid fa-triangle-exclamation'></i>",
               fn: "Stress hormones & fluid regulation",
               desc: "Paired glands sitting atop each kidney. The cortex produces aldosterone (promotes Na+ and water retention, raising blood pressure), cortisol (stress response, anti-inflammatory), and androgens. The medulla produces adrenaline (epinephrine) and noradrenaline for the fight-or-flight response.",
             },
@@ -390,7 +390,7 @@
         digestive: {
           name: "Digestive",
           color: "#84cc16",
-          icon: "🍽️",
+          icon: "<i class='fa-solid fa-utensils'></i>",
           tagline: "Mechanical & chemical nutrient processing",
           sketchfabEmbed:
             "https://sketchfab.com/models/584766fd58684369b166611faec98e04/embed?autostart=1&ui_theme=dark",
@@ -399,37 +399,37 @@
           organs: [
             {
               name: "Mouth & Esophagus",
-              icon: "👄",
+              icon: "<i class='fa-solid fa-teeth'></i>",
               fn: "Ingestion, mastication & swallowing",
               desc: "Digestion begins in the mouth: teeth mechanically break food while salivary amylase begins starch hydrolysis. The tongue forms a bolus and initiates swallowing. The esophagus propels the bolus to the stomach via coordinated peristaltic waves in ~8 seconds. The lower esophageal sphincter prevents gastric acid reflux.",
             },
             {
               name: "Stomach",
-              icon: "🫙",
+              icon: "<i class='fa-solid fa-jar'></i>",
               fn: "Acid digestion & chyme formation",
               desc: "A J-shaped muscular organ that stores and churns food for 2-6 hours. Parietal cells secrete HCl (pH 1.5-3.5) that denatures proteins and kills pathogens. Chief cells secrete pepsinogen, activated to pepsin by acid, which begins protein digestion. The result is a semi-liquid called chyme released in controlled pulses into the duodenum.",
             },
             {
               name: "Small Intestine",
-              icon: "〰️",
+              icon: "<i class='fa-solid fa-wave-square'></i>",
               fn: "Primary site of digestion & absorption",
               desc: "A ~6-7 m tube divided into duodenum, jejunum, and ileum. Villi and microvilli (brush border) amplify absorptive surface area to ~250 m2. Bile from the liver emulsifies fats; pancreatic enzymes complete carbohydrate, protein, and fat digestion. ~90% of all nutrient absorption occurs here.",
             },
             {
               name: "Large Intestine",
-              icon: "⭕",
+              icon: "<i class='fa-solid fa-circle-notch'></i>",
               fn: "Water reabsorption & waste compaction",
               desc: "A ~1.5 m tube (cecum, colon, rectum) that reabsorbs water and electrolytes from indigestible residue, compacting it into feces. Houses ~38 trillion bacteria (the gut microbiome) that ferment dietary fiber, produce short-chain fatty acids, and synthesize vitamins K and B12. Transit time is 24-72 hours.",
             },
             {
               name: "Liver",
-              icon: "🟤",
+              icon: "<i class='fa-solid fa-liver'></i>",
               fn: "Central metabolic & detox organ",
               desc: "The largest internal organ (~1.5 kg), performing over 500 functions. It produces bile (stored in the gallbladder) for fat emulsification, metabolizes absorbed nutrients from the portal vein, detoxifies drugs and alcohol, synthesizes plasma proteins and clotting factors, stores glycogen, and converts ammonia to urea.",
             },
             {
               name: "Pancreas",
-              icon: "🩶",
+              icon: "<i class='fa-solid fa-pancreas'></i>",
               fn: "Digestive enzymes & blood glucose control",
               desc: "A dual-function gland. Its exocrine acinar cells secrete ~1.5 L/day of enzyme-rich juice (lipase, amylase, proteases) into the duodenum. Its endocrine islets of Langerhans secrete insulin (lowers blood glucose) and glucagon (raises blood glucose) directly into the bloodstream.",
             },
@@ -446,7 +446,7 @@
         excretory: {
           name: "Excretory",
           color: "#a78bfa",
-          icon: "♻️",
+          icon: "<i class='fa-solid fa-recycle'></i>",
           tagline: "Multi-organ metabolic waste elimination",
           sketchfabEmbed:
             "https://sketchfab.com/models/ab00c534954d435eb6a3c6c36173b9f7/embed?autostart=1&ui_theme=dark",
@@ -455,37 +455,37 @@
           organs: [
             {
               name: "Kidneys",
-              icon: "🫘",
+              icon: "<i class='fa-solid fa-kidneys'></i>",
               fn: "Urea, creatinine & toxin excretion",
               desc: "The primary excretory organs, filtering ~180 L of plasma daily. They excrete urea (end product of protein catabolism), uric acid (purine breakdown), creatinine (muscle metabolism), and drug metabolites. Each nephron precisely regulates what is retained versus excreted based on the body needs.",
             },
             {
               name: "Lungs",
-              icon: "🫲",
+              icon: "<i class='fa-solid fa-lungs'></i>",
               fn: "CO2 & water vapor expiration",
               desc: "Expel carbon dioxide produced by cellular respiration and water vapor through exhalation. CO2 is transported in blood as bicarbonate (70%), bound to hemoglobin (23%), and dissolved (7%). Its removal is essential for maintaining blood pH between 7.35-7.45 - even small deviations cause respiratory acidosis or alkalosis.",
             },
             {
               name: "Skin",
-              icon: "🧴",
+              icon: "<i class='fa-solid fa-shield-halved'></i>",
               fn: "Salt, water & minor waste via sweat",
               desc: "Eccrine sweat glands excrete water, NaCl, small amounts of urea (~0.5 g/day), lactic acid, and ammonia. During heavy exercise in heat, sweat rate can reach 2-3 L/hour. While a minor excretory route compared to kidneys, sweating is critical for thermoregulation and contributes to electrolyte balance.",
             },
             {
               name: "Liver",
-              icon: "🟤",
+              icon: "<i class='fa-solid fa-liver'></i>",
               fn: "Ammonia detox & bilirubin excretion",
               desc: "Converts toxic ammonia (from amino acid catabolism) to urea via the urea cycle for renal excretion. Breaks down hemoglobin from old red blood cells into bilirubin, which is secreted in bile and excreted in feces (giving stool its brown color). Also detoxifies drugs, alcohol, and hormones.",
             },
             {
               name: "Large Intestine",
-              icon: "⭕",
+              icon: "<i class='fa-solid fa-circle-notch'></i>",
               fn: "Fecal waste & bilirubin elimination",
               desc: "Receives indigestible food residue, dead bacteria, and bile pigments (bilirubin) from the small intestine. Compacts this material into feces by reabsorbing water. Defecation eliminates solid waste including undigested fiber, dead gut bacteria (~30% of fecal mass), and metabolic byproducts.",
             },
             {
               name: "Lymphatic System",
-              icon: "🟢",
+              icon: "<i class='fa-solid fa-shield-virus'></i>",
               fn: "Cellular debris & interstitial waste drainage",
               desc: "Collects interstitial fluid containing cellular waste products, excess proteins, and tissue debris that cannot re-enter blood capillaries directly. Lymph nodes filter this fluid, removing pathogens and cellular debris, before returning clean lymph to the bloodstream via the thoracic duct.",
             },
@@ -502,7 +502,7 @@
         cardiovascular: {
           name: "Cardiovascular",
           color: "#ff3b5c",
-          icon: "❤️",
+          icon: "<i class='fa-solid fa-heart-pulse'></i>",
           tagline: "Closed-loop blood transport network",
           sketchfabEmbed:
             "https://sketchfab.com/models/1b7bfb07e6b24dd891099395ed98e989/embed?autostart=1&ui_theme=dark",
@@ -511,37 +511,37 @@
           organs: [
             {
               name: "Heart",
-              icon: "❤️",
+              icon: "<i class='fa-solid fa-heart-pulse'></i>",
               fn: "Dual-circuit muscular pump",
               desc: "A fist-sized, 4-chambered muscular organ (~300 g) that beats ~100,000 times/day. The right side pumps deoxygenated blood to the lungs (pulmonary circuit); the left side pumps oxygenated blood to the body (systemic circuit). The sinoatrial node generates the electrical impulse that initiates each heartbeat at 60-100 bpm at rest.",
             },
             {
               name: "Arteries",
-              icon: "🔴",
+              icon: "<i class='fa-solid fa-circle-arrow-right'></i>",
               fn: "High-pressure blood distribution",
               desc: "Thick-walled vessels with elastic and muscular walls that carry blood away from the heart under high pressure. The aorta (~2.5 cm diameter) is the largest. Arterial smooth muscle contracts and relaxes to regulate blood pressure and direct blood flow to active tissues. Atherosclerosis (plaque buildup) in arteries is the leading cause of heart attack and stroke.",
             },
             {
               name: "Veins",
-              icon: "🔵",
+              icon: "<i class='fa-solid fa-circle-arrow-left'></i>",
               fn: "Low-pressure blood return to heart",
               desc: "Thin-walled vessels with one-way valves that return deoxygenated blood to the heart under low pressure. Veins act as a blood reservoir, holding ~70% of total blood volume at rest. Skeletal muscle contractions and respiratory pressure changes assist venous return. Valve failure causes varicose veins.",
             },
             {
               name: "Capillaries",
-              icon: "〰️",
+              icon: "<i class='fa-solid fa-wave-square'></i>",
               fn: "Tissue-level exchange vessels",
               desc: "Microscopic vessels just one endothelial cell thick (~8-10 micrometers diameter). The actual exchange of O2, CO2, nutrients, hormones, and waste occurs here by diffusion and osmosis. Their combined surface area is ~6,000 m2. If laid end-to-end, the body capillaries would stretch ~100,000 km.",
             },
             {
               name: "Blood",
-              icon: "🩸",
+              icon: "<i class='fa-solid fa-droplet'></i>",
               fn: "Multifunctional transport fluid",
               desc: "A fluid connective tissue (~5 L total). Plasma (55%) carries nutrients, hormones, and waste. Red blood cells (44%) contain hemoglobin that binds O2 in the lungs and releases it in tissues. White blood cells (immune defense) and platelets (clotting) make up the remaining 1%. Blood also distributes heat and maintains pH via bicarbonate buffering.",
             },
             {
               name: "Aorta",
-              icon: "🔴",
+              icon: "<i class='fa-solid fa-circle-arrow-up'></i>",
               fn: "Main systemic artery",
               desc: "The largest artery in the body (~2.5 cm diameter, ~30 cm long), arising from the left ventricle. It arches superiorly (aortic arch), giving off branches to the head and arms, then descends through the thorax and abdomen, branching into the iliac arteries supplying the pelvis and legs. Its elastic walls absorb systolic pressure and recoil to maintain diastolic flow.",
             },
@@ -558,7 +558,7 @@
         respiratory: {
           name: "Respiratory",
           color: "#38bdf8",
-          icon: "🫲",
+          icon: "<i class='fa-solid fa-lungs'></i>",
           tagline: "Gas exchange between air and blood",
           sketchfabEmbed:
             "https://sketchfab.com/models/250911151757489da1cf5501b791f363/embed?autostart=1&ui_theme=dark",
@@ -567,37 +567,37 @@
           organs: [
             {
               name: "Nasal Cavity",
-              icon: "👃",
+              icon: "<i class='fa-solid fa-wind'></i>",
               fn: "Air filtration, warming & humidification",
               desc: "The primary entry point for air. Nasal hairs and mucus trap particles >10 micrometers. The highly vascular turbinate bones warm air to ~37 degrees C and humidify it to ~100% relative humidity before it reaches the delicate lung tissue. The olfactory epithelium in the roof detects odors via ~10 million receptor cells.",
             },
             {
               name: "Trachea",
-              icon: "⬇️",
+              icon: "<i class='fa-solid fa-minus'></i>",
               fn: "Rigid airway to the lungs",
               desc: "The windpipe - a 10-16 cm tube reinforced by 16-20 C-shaped hyaline cartilage rings that prevent collapse during inhalation. The posterior membranous wall allows the esophagus to expand during swallowing. Pseudostratified ciliated epithelium (the mucociliary escalator) sweeps trapped particles upward to be swallowed or expelled.",
             },
             {
               name: "Bronchi & Bronchioles",
-              icon: "🌳",
+              icon: "<i class='fa-solid fa-tree'></i>",
               fn: "Branching airway distribution tree",
               desc: "The trachea divides into left and right primary bronchi at the carina (T4-5 level). These branch 23 times, progressively losing cartilage and narrowing. Terminal bronchioles (~0.5 mm) are the last purely conducting airways. Smooth muscle in bronchioles regulates airflow; spasm causes the wheeze of asthma.",
             },
             {
               name: "Lungs",
-              icon: "🫲",
+              icon: "<i class='fa-solid fa-lungs'></i>",
               fn: "Primary gas exchange organs",
               desc: "Two spongy organs filling most of the thoracic cavity. The right lung has 3 lobes; the left has 2 with a cardiac notch accommodating the heart. Together they contain ~2,400 km of airways, ~600 million alveoli, and a gas exchange surface of ~70 m2. At rest, ~500 mL of air moves per breath.",
             },
             {
               name: "Alveoli",
-              icon: "🫧",
+              icon: "<i class='fa-solid fa-circle-dot'></i>",
               fn: "Microscopic gas exchange sacs",
               desc: "~600 million thin-walled air sacs (~200 micrometers diameter) where gas exchange occurs. Type I pneumocytes form the ultra-thin exchange surface (0.2 micrometers). Type II pneumocytes secrete surfactant that reduces surface tension and prevents alveolar collapse. O2 diffuses into pulmonary capillaries; CO2 diffuses out, driven by partial pressure gradients.",
             },
             {
               name: "Diaphragm",
-              icon: "🌀",
+              icon: "<i class='fa-solid fa-arrows-up-down'></i>",
               fn: "Primary muscle of breathing",
               desc: "A dome-shaped skeletal muscle sheet separating the thoracic and abdominal cavities. During inspiration, it contracts and descends ~1.5 cm, increasing thoracic volume by ~500 mL and creating negative pressure that draws air in. Innervated by the phrenic nerve (C3-C5). Accounts for ~70% of the work of quiet breathing.",
             },
@@ -614,7 +614,7 @@
         nervous: {
           name: "Nervous",
           color: "#fbbf24",
-          icon: "🧠",
+          icon: "<i class='fa-solid fa-brain'></i>",
           tagline: "Electrochemical command & control network",
           sketchfabEmbed:
             "https://sketchfab.com/models/2db52ff66ee04ed1b61004b9a2d29bdf/embed?autostart=1&ui_theme=dark",
@@ -623,37 +623,37 @@
           organs: [
             {
               name: "Brain",
-              icon: "🧠",
+              icon: "<i class='fa-solid fa-brain'></i>",
               fn: "Central command, cognition & integration",
               desc: "The most complex structure known - ~1.4 kg containing ~86 billion neurons and ~85 billion glial cells. The cerebral cortex (cognition, sensation, movement) has ~16 billion neurons. The cerebellum (coordination) contains ~69 billion. The brainstem controls vital autonomic functions (breathing, heart rate, blood pressure). The brain consumes 20% of the body energy despite being 2% of its mass.",
             },
             {
               name: "Spinal Cord",
-              icon: "🔗",
+              icon: "<i class='fa-solid fa-signal'></i>",
               fn: "CNS relay highway & reflex center",
               desc: "A cylinder of neural tissue (~45 cm, ~1 cm diameter) protected by the vertebral column and three meningeal layers. It relays sensory signals ascending to the brain and motor commands descending to muscles. Reflex arcs (e.g., knee-jerk) are processed entirely within the spinal cord, bypassing the brain for speed. Complete transection causes permanent paralysis below the injury level.",
             },
             {
               name: "Peripheral Nerves",
-              icon: "〰️",
+              icon: "<i class='fa-solid fa-network-wired'></i>",
               fn: "Body-wide signal transmission network",
               desc: "31 pairs of spinal nerves and 12 pairs of cranial nerves form the peripheral nervous system. Sensory (afferent) fibers carry signals from receptors to the CNS. Motor (efferent) fibers carry commands from the CNS to muscles and glands. The sciatic nerve, the body largest, runs from the lumbar spine to the foot and is ~2 cm wide at its origin.",
             },
             {
               name: "Autonomic NS",
-              icon: "⚙️",
+              icon: "<i class='fa-solid fa-gear'></i>",
               fn: "Involuntary physiological regulation",
               desc: "Controls involuntary functions via two opposing divisions. The sympathetic division prepares the body for stress: increases heart rate, dilates pupils, redirects blood to muscles, and inhibits digestion. The parasympathetic division promotes rest and recovery: slows heart rate, stimulates digestion, and constricts pupils. The enteric nervous system in the gut wall operates semi-independently.",
             },
             {
               name: "Neurons",
-              icon: "⚡",
+              icon: "<i class='fa-solid fa-bolt'></i>",
               fn: "Fundamental electrochemical signal cells",
               desc: "Specialized cells that transmit information via action potentials - rapid reversals of membrane voltage caused by Na+ and K+ ion flows. Each neuron has dendrites (receive input), a cell body (integrates signals), and an axon (transmits output). Signals travel at 0.5-120 m/s depending on myelination. A single cortical neuron can form ~10,000 synaptic connections.",
             },
             {
               name: "Cerebellum",
-              icon: "🔮",
+              icon: "<i class='fa-solid fa-circle-nodes'></i>",
               fn: "Movement coordination & motor learning",
               desc: "Located at the posterior base of the brain, the cerebellum contains ~69 billion neurons - more than the rest of the brain combined. It receives copies of motor commands and sensory feedback, comparing intended vs. actual movement and issuing corrections in real time. Essential for balance, fine motor control, and learning new motor skills. Damage causes ataxia (uncoordinated movement).",
             },
@@ -667,6 +667,8 @@
           fact: "<strong>Clinical insight:</strong> The brain has ~100 trillion synaptic connections. Alzheimer disease progressively destroys these connections, beginning in the hippocampus (memory) and spreading to the cortex, affecting ~50 million people worldwide and representing the most common cause of dementia.",
           overlayParts: ["brain", "spine_nerves"],
         },
+      };
+
       // THREE.JS SCENE
       // ─────────────────────────────────────────────
       const canvas = document.getElementById("three-canvas");
@@ -1563,6 +1565,16 @@
       }
       function switchGender(g) {
         activeGender = g;
+        const embed = activeSystem && SYSTEMS[activeSystem].sketchfabEmbed;
+        if (embed && typeof embed === "object") {
+          document.getElementById("sf-iframe").src = embed[g];
+          const fBtn = document.getElementById("sf-btn-female");
+          const mBtn = document.getElementById("sf-btn-male");
+          fBtn.style.background = g === "female" ? "#ec4899" : "none";
+          fBtn.style.color = g === "female" ? "#fff" : "#ec4899";
+          mBtn.style.background = g === "male" ? "#ec4899" : "none";
+          mBtn.style.color = g === "male" ? "#fff" : "#ec4899";
+        }
         renderInfo(activeSystem);
       }
 
