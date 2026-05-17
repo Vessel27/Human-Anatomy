@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Human Anatomy Explorer</title>
+    <link rel="icon" href="human-organs.png" type="image/png" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/GLTFLoader.js"></script>
@@ -11,8 +12,24 @@
   </head>
   <body>
     <header>
-      <div class="logo">Human Anatomy <span>/ 3D EXPLORER</span></div>
+      <div class="logo">Anaphys Learn <span>/ 3D EXPLORER</span></div>
+      <button id="sidebar-toggle" class="sidebar-toggle" onclick="toggleSidebar()" aria-label="Toggle sidebar">
+        <i class="fa-solid fa-bars"></i>
+      </button>
     </header>
+
+    <div class="modal-backdrop" id="welcome-modal">
+      <div class="welcome-modal">
+        <button class="modal-close" onclick="closeWelcomeModal()" aria-label="Close welcome modal">&times;</button>
+        <div class="modal-icon-wrap">
+          <img src="human-organs.png" alt="Anaphys Learn icon" class="modal-icon" />
+        </div>
+        <h1>Anaphys Learn</h1>
+        <p class="modal-description">Anaphys Learn is an educational platform dedicated to simplifying the study of Anatomy and Physiology. The website provides interactive learning resources that help learners understand the structure and functions of the human body. From body systems and organs to diseases and disorders, Anaphys Learn offers comprehensive lessons, diagrams, and visual guides designed to make learning easier, engaging, and accessible for everyone.</p>
+        <p class="modal-tagline">“Where Anatomy Meets Physiology.”</p>
+        <button class="modal-action" onclick="closeWelcomeModal()">Get Started</button>
+      </div>
+    </div>
 
     <div class="main">
       <nav class="sidebar" id="sidebar"></nav>
